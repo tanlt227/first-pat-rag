@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, "Plus Jakarta Sans", Ubuntu, sans-serif;
+    color: #131722;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #E0E3EB;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #787B86;
+}
+
+.sparkline-green {
+  stroke: #089981;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sparkline-red {
+  stroke: #F23645;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.badge-500 {
+  background-color: #D32F2F;
+}
+
+.badge-100 {
+  background-color: #00838F;
+}
+
+.badge-30 {
+  background-color: #0288D1;
+}
+
+.badge-2000 {
+  background-color: #5E35B1;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #2962FF 0%, #7B1FA2 100%);
+}
+
+.btn-gradient:hover {
+  opacity: 0.94;
+}
+
+/* Subtle pulse for live data */
+@keyframes tv-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.animate-tv-pulse {
+  animation: tv-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
